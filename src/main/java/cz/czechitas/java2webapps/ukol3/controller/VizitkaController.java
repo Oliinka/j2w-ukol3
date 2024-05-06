@@ -15,9 +15,11 @@ import java.util.List;
 public class VizitkaController {
         private final List<Vizitka> seznamVizitek = List.of(
                 new Vizitka("Dita Formánková", "Czechitas.cz", "Václavské nám. 837/11", "11000 Praha 1", "dita@czechitas.cz", "+420 800 123 456", "www.czechitas.cz"),
-                new Vizitka("Monika Ptáčníková", "Czechitas.cz", "Václavské nám. 837/11", "11000 Praha 1", "monika@czechitas.cz", "+420 800 123 456", "www.czechitas.cz"),
-                new Vizitka("Jan Nováková", "Czechitas z. s.", "Václavské náměstí 837/11", "11000 Praha 1", "", "+420 800 123 456", "www.czechitas.cz"),
-                new Vizitka("Mirka Zatloukalová", "Czechitas z. s.", "Václavské náměstí 837/11", "11000 Praha 1", "mirka@czechitas.cz", "", "www.czechitas.cz")
+                new Vizitka("Monika Ptáčníková", "Czechitas.com", "Václavské nám. 837/11", "11000 Praha 1", "monika@czechitas.cz", "+420 800 123 456", "www.czechitas.cz"),
+                new Vizitka("Jan Nováková", "Czechitas z. s.", "Nikoly Tesly 1097/14", "16000 Praha 6", "", "+420 800 123 456", "www.czechitas.cz"),
+                new Vizitka("Mirka Zatloukalová", "Czechitas z. s.", "Václavské náměstí 837/11", "11000 Praha 1", "mirka@czechitas.cz", "", "www.czechitas.cz"),
+                new Vizitka("Petra Ptáčková", "Czechitas z. s.", "Václavské náměstí 837/11", "11000 Praha 1", "petra@czechitas.cz", "", "www.czechitas.cz"),
+                new Vizitka("Roman Kráčměrová", "Czechitas z. s.", "Václavské náměstí 837/11", "11000 Praha 1", "romana@czechitas.cz", "", "www.czechitas.cz")
         );
 
         @GetMapping("/")
