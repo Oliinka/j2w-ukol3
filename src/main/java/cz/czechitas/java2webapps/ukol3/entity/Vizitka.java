@@ -59,10 +59,6 @@ public class Vizitka {
         return ulice + " " + obecPsc;
     }
 
-    public void setCelaAdresa(String celaAdresa) {
-        this.celaAdresa = celaAdresa;
-    }
-
     public String getEmail() {
         return email;
     }

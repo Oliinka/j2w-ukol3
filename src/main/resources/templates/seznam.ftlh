@@ -1,4 +1,4 @@
-
+[#ftl]
 <!DOCTYPE html>
 <html lang="cs">
 <head>
@@ -13,26 +13,49 @@
 <body>
 
 <div class="seznam">
-    <#list seznamVizitek as vizitka>
+    [#list seznamVizitek as vizitka]
         <a href="/${vizitka_index}">
             <div class="vizitka">
                 <div class="jmeno">${vizitka.jmeno}</div>
+
+                [#if vizitka.firma??]
                 <div class="firma">${vizitka.firma}</div>
+                [/#if]
+
                 <div class="udaje">
                     <div class="adresa">
+
+                        [#if vizitka.ulice??]
                         <div>${vizitka.ulice}</div>
+                        [/#if]
+
+                        [#if vizitka.obecPsc??]
                         <div><span>${vizitka.obecPsc}</span></div>
+                        [/#if]
+
                     </div>
                     <div class="kontakty">
+
+                        [#if vizitka.email??]
                         <div><i class="las la-at"></i> <span>${vizitka.email}</span></div>
+                        [/#if]
+
+                        [#if vizitka.telefon??]
                         <div><i class="las la-phone-alt"></i> <span>${vizitka.telefon}</span></div>
+                        [/#if]
+
+
+                        [#if vizitka.web??]
                         <div><i class="las la-globe"></i> <span>${vizitka.web}</span></div>
+                        [/#if]
+
                     </div>
                 </div>
             </div>
         </a>
-    </#list>
+    [/#list]
 </div>
 
 </body>
 </html>
+
